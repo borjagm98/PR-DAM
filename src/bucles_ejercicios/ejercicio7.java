@@ -11,7 +11,7 @@ public class ejercicio7 {
 
             int entrada = 0;
             Scanner sc = new Scanner(System.in);
-            System.out.println("Introduce la combinación de la caja fuerte [4 intentos]: ");
+            System.out.println("Introduce la combinación de la caja fuerte: ");
             entrada = sc.nextInt();
 
             if(entrada != combinacion){

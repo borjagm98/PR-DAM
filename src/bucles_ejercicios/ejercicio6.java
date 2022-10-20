@@ -7,8 +7,8 @@ public class ejercicio6 {
 
         do{
             System.out.println(i);
-            i+=20;
-        }while (i <= 160);
+            i-=20;
+        }while (i >= 160);
 
     }
 }
