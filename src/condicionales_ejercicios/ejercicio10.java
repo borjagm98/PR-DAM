@@ -5,10 +5,9 @@ import java.util.Scanner;
 public class ejercicio10 {
     public static void main(String[] args) {
 
-        String entrada_mes = "";
         Scanner sc0 = new Scanner(System.in);
         System.out.println("Introduce el mes: ");
-        entrada_mes = sc0.nextLine();
+        String entrada_mes = sc0.nextLine();
 
         int entrada_dia = 0;
         Scanner sc1 = new Scanner(System.in);
@@ -31,7 +30,6 @@ public class ejercicio10 {
             if (entrada_dia >= 1 && entrada_dia <= 20) {
                 System.out.println("Tauro");
             }
-
         }
     }
 }
