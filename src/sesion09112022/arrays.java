@@ -1,8 +1,6 @@
 package sesion09112022;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class arrays {
 
     public static void main(String[] args) {
@@ -36,6 +34,4 @@ public class arrays {
 
         // Otra forma de mostrar todos los valores del array
     }
-
-
 }
