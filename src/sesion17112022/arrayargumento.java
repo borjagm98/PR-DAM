@@ -8,12 +8,12 @@ public class arrayargumento {
         int longitud = calcular_longitud(arrayorigen);
         imprimirArray(arrayorigen, longitud);
     }
-private static void imprimirArray(int[] arrayorigen, int longitud){
-    System.out.println("El array: " + Arrays.toString(arrayorigen)+" tiene una longiud de: "+ longitud);
-}
-private static int calcular_longitud(int [] arrayorigen){
-    int resultado= -1;
-    resultado = arrayorigen.length;
-    return resultado;
-}
+    private static void imprimirArray(int[] arrayorigen, int longitud){
+        System.out.println("El array: " + Arrays.toString(arrayorigen)+" tiene una longiud de: "+ longitud);
+    }
+    private static int calcular_longitud(int [] arrayorigen){
+        int resultado= -1;
+        resultado = arrayorigen.length;
+        return resultado;
+    }
 }
