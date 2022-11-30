@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ejercicio3 {
     public static void main(String[] args) {
 
-        String entrada = "";
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce una string: ");
-        entrada = sc.next();
+        String palabra = null;
+        Scanner sc = new.Scanner(System.in);
+        System.out.println("Introduzca la palabra con la que quieres trabajar.");
+        palabra = sc.next();
 
         System.out.println("Elige una opcion del siguiente menu: \n" +
                 "1- Longitud del string.\n" +
@@ -23,46 +23,77 @@ public class ejercicio3 {
 
         Scanner sc1 = new Scanner(System.in);
         int opcion = 0;
-        System.out.println("Introduce una opcion: ");
+        System.out.println("Introduce una opcion del menu: ");
         opcion = sc1.nextInt();
 
         switch (opcion){
             case 1:
-                longitud_string(entrada);
+                System.out.println("La longitud de "+palabra+" es"+longitud_string(palabra));
                 break;
             case 2:
-                inicial_string(entrada);
+                System.out.println("La inicial de "+palabra+" es"+inicial_string(palabra));
                 break;
             case 3:
-                ultima_letra();
+                System.out.println("La inicial de "+palabra+" es"+inicial_string(palabra));
                 break;
             case 4:
-                quitar_espacios();
-                break;
+
             case 5:
-                pasar_mayusculas();
-                break;
             case 6:
-                pasar_minusculas();
-
+            case 7:
+            case 8:
+            case 9:
+            default: System.out.println("Opcion no valida.");
         }
-    }
 
-    private static int longitud_string(String entrada) {
-        int longitud = entrada.length();
+    }
+    public static int longitud_string(String palabra){
+        int resultado = 0;
+        resultado = palabra.length();
 
-        return longitud;
+        return resultado;
     }
-    private static int inicial_string(String entrada) {
-        int 
+    public static char inicial_string(String palabra){
+        char inicial;
+        inicial = palabra.charAt(0);
+
+        return inicial;
     }
-    private static void ultima_letra() {
+    public static char final_string(String palabra){
+        char ultima;
+        ultima = palabra.charAt(palabra.length()-1);
+        return ultima;
     }
-    private static void quitar_espacios() {
+    public static String quitar_espacios(String palabra){
+        String pal = "";
+        pal = palabra.trim();
+        return pal;
     }
-    private static void pasar_minusculas() {
+    public static void quitar_espacios2(String palabra){
+        System.out.println("La palabra libre de espacios es: " +palabra.trim());
     }
-    private static void pasar_mayusculas() {
+    public static String mayusculas(String palabra){
+        String resultado;
+        resultado = palabra.toUpperCase();
+        return resultado;
+    }
+    public static void minusculas(String palabra){
+        System.out.println("La palabra en minusculas es: "+palabra.toLowerCase());
+    }
+    public static String remplazo(String palabra, char letra_aremplazar, char letra_nueva){
+        String palabra_resultante = null;
+        palabra_resultante = palabra.replace(letra_aremplazar, letra_nueva);
+        return palabra_resultante;
+    }
+    public static boolean esvacio(String palabra){
+        boolean resultado = false;
+        resultado = palabra.isEmpty();
+        return resultado;
+    }
+    public static char[] pasararrachar(String palabra){
+        char[] array;
+        array = palabra.toCharArray();
+        return array;
     }
 
 }
