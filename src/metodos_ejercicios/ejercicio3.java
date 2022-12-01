@@ -6,7 +6,7 @@ public class ejercicio3 {
     public static void main(String[] args) {
 
         String palabra = null;
-        Scanner sc = new.Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca la palabra con la que quieres trabajar.");
         palabra = sc.next();
 
